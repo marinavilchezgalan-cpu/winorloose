@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win or Lose - ¿Tendrás suerte?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <main class="game-container">
+        <header>
+            <h1>Win or Lose</h1>
+            <p>Elige un color y prueba tu suerte</p>
+        </header>
+
+        <div class="result-display" id="result-display">
+            <span class="placeholder">¡Haz tu apuesta!</span>
+        </div>
+
+        <div class="button-group">
+            <button id="btn-red" class="game-btn btn-red">
+                <span class="btn-text">Rojo</span>
+                <div class="btn-glow"></div>
+            </button>
+            <button id="btn-blue" class="game-btn btn-blue">
+                <span class="btn-text">Azul</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+
+        <div class="stats">
+            <p>Jugadas: <span id="plays-count">0</span></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
